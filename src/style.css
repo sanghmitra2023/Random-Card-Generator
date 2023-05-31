@@ -33,3 +33,9 @@ body {
   font-size: 70px;
   font-weight: 500;
 }
+#button {
+  background-color: rgb(250, 250, 154);
+  color: green;
+  margin-left: 400px;
+  font-size: 1.5rem;
+}
