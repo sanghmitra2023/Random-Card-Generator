@@ -37,3 +37,20 @@ function reloadThePage() {
   window.location.reload();
 }
 setInterval(reloadThePage, 10000);
+
+const cardWidthInput = document.getElementById("cardWidth");
+const cardHeightInput = document.getElementById("cardHeight");
+const applyButton = document.getElementById("applyButton");
+
+applyButton.addEventListener("click", applyChanges);
+
+function applyChanges() {
+  const cardWidth = cardWidthInput.value;
+  const cardHeight = cardHeightInput.value;
+  const card = document.querySelector(".card");
+
+  if (cardWidth && cardHeight) {
+    card.style.maxWidth = `${cardWidth}px`;
+    card.style.height = `${cardHeight}px`;
+  }
+}
